@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/template-web.js"></script>
+    <script type="text/javascript" src="../js/login.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <style type="text/css">
+        input {
+            padding: 10px;
+        }
+
+        .login_div {
+            margin: 15%;
+            width: auto;
+            height: 100%;
+        }
+
+        .input-group {
+            margin: 20px auto auto;
+            width: 300px;
+        }
+
+        .input_box {
+            margin: auto;
+            width: 100%;
+        }
+
+        .btn {
+            margin: auto;
+            width: 100%;
+        }
+
+        body {
+            background-image: url(../img/login_bj.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="login_div">
+
+    <div class="input-group">
+        <span class="input-group-addon">*</span>
+        <input class="input_box" id="username" type="text" placeholder="请输入用户名" aria-describedby="basic-addon1">
+    </div>
+
+    <div class="input-group">
+        <span class="input-group-addon">*</span>
+        <input class="input_box" id="password" type="text" placeholder="请输入密码" style="-webkit-text-security:disc"
+               aria-describedby="basic-addon1">
+    </div>
+
+    <div class="input-group">
+        <button type="button" class="btn btn-default navbar-btn" onclick="login()">登录</button>
+    </div>
+
+</div>
+</body>
+
+
+</html>
